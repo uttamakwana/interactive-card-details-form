@@ -1,0 +1,31 @@
+.bg-img {
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  background: linear-gradient(to bottom, #204cd9, #ac00eb);
+  /* background: linear-gradient(to bottom, blue, red); */
+  z-index: -10;
+}
+
+@media (width <= 1024px) {
+  .bg-img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (width <= 1024px) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+}
